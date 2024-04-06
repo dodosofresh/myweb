@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
 
+  <title>Nhập dữ liệu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+  <h2>Bảng sửa giờ</h2>
+  <div>
+      <label for="inputData1">Tên:</label>
+      <input type="text" id="inputData1" placeholder="Nhập tên">
+    </div>
+    <br>
+    <div>
+      <label for="inputData2">Ngày sinh: </label>
+      <input type="date" id="inputData2">
+    </div>
+    <br>
+    <div>
+      <label for="inputData3">Giới tính: </label>
+      <select id="inputData3">
+        <option value="">Chọn giới tính</option>
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="inputData4">Nhập ngày sửa:</label>
+      <input type="datetime-local" id="inputData4">
+    </div>
+    <br>
+  <button onclick="getData()">Up dữ liệu</button>
+  <button onclick="createAndDownloadExcel()">Tải xuống file Excel</button>
+  <p id="output"></p>
+  <div id="link-container"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
